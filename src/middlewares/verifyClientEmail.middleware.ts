@@ -16,10 +16,10 @@ export const verifyEmail = async (
     `)
     
     const queryResult = await client.query(queryString, [request.body.email])
-    console.log(queryResult)
     if (queryResult.rowCount) {
         throw new AppError("Email already registered", 409)
     }
+    console.log(queryResult.rows[0])
 
     return next()
 }

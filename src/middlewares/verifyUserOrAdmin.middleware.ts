@@ -14,7 +14,8 @@ const verifyUserPermission = (
 
     if(admin) return next()
 
-    if(sub !== id || !admin){
+
+    if(sub != id && !admin){
         throw new AppError("Insufficient permission", 403)
     }
 

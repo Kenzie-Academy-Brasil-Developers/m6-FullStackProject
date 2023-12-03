@@ -27,12 +27,12 @@ const login = async (
     }
 
     const token = sign(
-        {username: user.name, admin: user.admin, id: user.id},
+        {username: user.name, admin: user.admin, user_id: user.id},
         process.env.SECRET_KEY!,
         {subject: user.id.toString(), expiresIn: process.env.EXPIRES_IN!}
     )
 
-    return { token }
+    return { id: user.id, token: token }
 }
 
 export default { login }
