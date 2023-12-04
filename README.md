@@ -3,7 +3,7 @@
 # Instalação da API para rodar localmente
 
 ## Criação da Tabela 
-- Após clonar o repositório na sua máquina, rode o comando **npm install**, para instalação das dependência. 
+- Após clonar o repositório na sua máquina, rode o comando **npm install**, para instalação das dependências. 
 - Crie um banco de dados **_postgres_**, depois crie as tabelas com os comandos presentes no arquivo **createTables.sql** e crie um arquivo chamado **.env** na raiz do projeto e preencha seguindo o modelo do documento **.env.example**. 
 - Rode o comando **npm run dev** para rodar a API. 
 - Todos as rotas podem ser testadas importando o arquivo **Project Fullstack Beah96** no insomnia.
